@@ -14,6 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         List {
+            Text("Hola")
             Section(header: Text("DefaultPickerStyle")) {
                 Picker("Seleccione un horario", selection: $selectedValue) {
                     ForEach(times, id: \.self) { Text($0) }
